@@ -14,6 +14,7 @@ namespace think;
 
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/app/');
+define('SITE_URL',"127.0.0.1/YFCMF");
 // 加载基础文件
 require __DIR__ . '/thinkphp/base.php';
 

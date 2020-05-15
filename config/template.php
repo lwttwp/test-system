@@ -13,7 +13,6 @@
 // | 模板设置
 // +----------------------------------------------------------------------
 use \think\facade\Env;
-
 return [
     // 模板引擎类型 支持 php think 支持扩展
     'type' => 'Think',
@@ -32,5 +31,8 @@ return [
     // 标签库标签结束标记
     'taglib_end' => '}',
     // 缓存路径
-    'cache_path' => Env::get('RUNTIME_PATH') . 'template/'
+    'cache_path' => Env::get('RUNTIME_PATH') . 'template/',
+    'view_replace_str' => [
+        '__PUBLIC__' => SITE_URL.'/public',
+    ],
 ];
