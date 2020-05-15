@@ -40,10 +40,15 @@
             <td><br/><br/></td>
         </tr>
         <tr>
-            <td><button style="margin-left: 150px;width: 260px; background-color: #CD950C;color: white;font-size: 18px" class="btn" >登录</button> <button style="width: 170px;font-size: 18px;background-color: #1E90FF" class="btn">退出</button></td>
+            <td><button style="margin-left: 150px;width: 260px; background-color: #CD950C;color: white;font-size: 18px" class="btn" >登录</button> <button type="button" style="width: 170px;font-size: 18px;background-color: #1E90FF" class="btn" onclick="close_page()">退出</button></td>
         </tr>
     </table>
 </form>
 
 </body>
+<script type="text/javascript">
+    function close_page() {
+        window.close();
+    }
+</script>
 </html>
